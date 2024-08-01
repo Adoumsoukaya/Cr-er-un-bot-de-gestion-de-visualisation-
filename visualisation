@@ -1,0 +1,35 @@
+import dash
+from dash import dcc, html
+from dash.dependencies import Input, Output
+import plotly.express as px
+import pandas as pd
+
+# Charger les données exemple
+df = px.data.iris()
+
+# Initialiser l'application Dash
+app = dash.Dash(__name__)
+
+# Définir la mise en page de l'application
+app.layout = html.Div([
+    html.H1("Visualisation de données avec Dash"),
+    dcc.Dropdown(
+        id='dropdown',
+        options=[{'label': col, 'value': col} for col in df.columns],
+        value='sepal_width'
+    ),
+    dcc.Graph(id='graph')
+])
+
+# Définir les callbacks pour mettre à jour le graphique
+@app.callback(
+    Output('graph', 'figure'),
+    [Input('dropdown', 'value')]
+)
+def update_graph(selected_column):
+    fig = px.histogram(df, x=selected_column)
+    return fig
+
+# Exécuter l'application
+if __name__ == '__main__':
+    app.run_server(debug=True)
