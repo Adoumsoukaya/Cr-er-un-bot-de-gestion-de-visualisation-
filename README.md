@@ -23,8 +23,7 @@ cd visualisation-data-bot
 # 2- Installez les dépendances :
 pip install dash pandas plotly
 
-# 3- Utilisation :
-- Exécutez l'application :
+# 3- Utilisation : Exécutez l'application :
 python visualisation.py
 
-Ouvrez votre navigateur et accédez à http://127.0.0.1:8050/ pour voir l'application.
+### Ouvrez votre navigateur et accédez à http://127.0.0.1:8050/ pour voir l'application.
