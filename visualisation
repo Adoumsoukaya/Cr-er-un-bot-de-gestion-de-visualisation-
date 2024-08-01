@@ -20,7 +20,7 @@ app.layout = html.Div([
     ),
     dcc.Graph(id='graph')
 ])
-
+ 
 # Définir les callbacks pour mettre à jour le graphique
 @app.callback(
     Output('graph', 'figure'),
