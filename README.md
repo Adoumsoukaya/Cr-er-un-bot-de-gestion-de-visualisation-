@@ -17,8 +17,8 @@ Ce projet est une application web de visualisation de données utilisant Dash, u
 1. Clonez ce dépôt :
 
 ```bash
-git clone https://github.com/Adoumsoukaya/visualisation-data-bot.git
-cd visualisation-data-bot
+git clone https://github.com/Adoumsoukaya/Cr-er-un-bot-de-gestion-de-visualisation-.git
+cd Cr-er-un-bot-de-gestion-de-visualisation-
 
 # 2- Installez les dépendances :
 pip install dash pandas plotly
