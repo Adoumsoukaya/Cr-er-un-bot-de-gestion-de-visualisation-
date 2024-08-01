@@ -17,7 +17,7 @@ Ce projet est une application web de visualisation de données utilisant Dash, u
 1. Clonez ce dépôt :
 
 ```bash
-git clone https://github.com/votre-utilisateur/visualisation-data-bot.git
+git clone https://github.com/Adoumsoukaya/visualisation-data-bot.git
 cd visualisation-data-bot
 
 # 2- Installez les dépendances :
